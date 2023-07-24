@@ -32,19 +32,19 @@ class SLL {
     // Print List Data
     printData() {
         let current = this.head;
+        let result = [];
         while (current) {
-            console.log(current.data);
+            // console.log(current.data);
+            result.push(current.data);
             current = current.next;
         }
+        console.log(result);
     }
 }
 
 const test = new SLL();
-test.addFront(100);
-test.addFront(200);
-// test.addFront(300);
-// test.addFront(400);
-// test.removeFront();
-
+test.addFront(76);
+test.addFront(2);
 test.printData();
-test.getFront();
+test.addFront(11.41);
+test.printData();
